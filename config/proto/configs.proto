@@ -1,0 +1,21 @@
+
+syntax = "proto3";
+option go_package = "./;pb";
+import "common.proto";
+	
+message CfgPrize {
+	int32	Id	= 1;
+	repeated int32	Prize	= 2;
+	ItemCnt	Item	= 3;
+}
+message CfgTest {
+	int32	Id	= 1;
+	string	Name	= 2;
+	int32	Gift	= 3;
+	repeated int32	Prize	= 4;
+	ItemCnt	Item	= 5;
+}
+message Cfg {
+	map<string, CfgPrize>	Prize	= 1;
+	map<string, CfgTest>	Test	= 2;
+}

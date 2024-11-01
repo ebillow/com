@@ -1,0 +1,7 @@
+syntax = "proto3";
+option go_package = "./;pb";
+
+message ItemCnt {
+  int32 Id = 1;
+  int64 Cnt = 2;
+}
